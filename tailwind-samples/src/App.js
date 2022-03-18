@@ -18,6 +18,21 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <section className="flex flex-col items-center my-16">
+        <h1 className="text-4xl text-center">
+          Tailwind CSS makes styling React components easier!
+        </h1>
+
+        <a
+          className="bg-blue-500 text-white p-2.5 w-fit mt-9"
+          href="https://tailwindcss.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Tailwind CSS
+        </a>
+      </section>
     </div>
   );
 }

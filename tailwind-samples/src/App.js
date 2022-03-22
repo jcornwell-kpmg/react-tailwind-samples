@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.scss';
+//import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
+      {/*
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,20 +19,14 @@ function App() {
           Learn React
         </a>
       </header>
+      */}
 
-      <section className="flex flex-col items-center my-16">
-        <h1 className="text-4xl text-center">
-          Tailwind CSS makes styling React components easier!
-        </h1>
+      <section className="p-8 flex justify-between">
+        <button className="h-12 min-w-40 bg-blue-700 hover:bg-blue-500 text-white font-medium py-1 px-12 rounded-3xl border-3 border-blue-700">Primary</button>
 
-        <a
-          className="bg-blue-500 text-white p-2.5 w-fit mt-9"
-          href="https://tailwindcss.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Tailwind CSS
-        </a>
+        <button className="h-12 min-w-40 bg-white text-blue-700 font-medium hover:font-bold py-1 px-12 rounded-3xl border-3 hover:border-5 border-blue-700">Secondary</button>
+
+        <button className="h-12 min-w-40 bg-gray-100 hover:bg-gray-200 text-blue-700 font-medium py-1 px-12 rounded-3xl border-3 border-gray-100 hover:border-gray-200">Tertiary</button>
       </section>
     </div>
   );

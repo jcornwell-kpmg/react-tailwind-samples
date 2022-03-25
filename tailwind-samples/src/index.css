@@ -2,6 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn {
+  min-width: 214px; /* Specific width and height set to account for secondary button that has varying border thickness between normal and hover states.*/
+  min-height: 53px;
+}
+
+.btn:hover {
+  transition: 150ms linear;
+}
+
+/* Example of referencing Tailwind utility classes in CSS */
+@layer components {
+  .btn {
+    @apply 
+    text-base
+    font-medium
+    tracking-wider
+    capitalize
+    border-3
+    rounded-2rem
+    py-2
+    px-12
+    ;
+  }
+
+  .btn-primary {
+    @apply 
+    bg-cust-blue  
+    text-white 
+    border-cust-blue
+    hover:bg-cust-blue-lighter
+    ;
+  }
+
+  .btn-secondary {
+    @apply 
+    bg-white 
+    text-cust-blue 
+    border-cust-blue 
+    hover:font-bold
+    hover:border-5
+    ;
+  }
+
+  .btn-tertiary {
+    @apply 
+    bg-cust-gray-lighter  
+    text-cust-blue 
+    border-cust-gray-lighter 
+    hover:bg-cust-gray
+    hover:border-cust-gray
+    ;
+  }
+
+  .btn-primary-dark {
+    @apply 
+    bg-white 
+    text-black 
+    border-white 
+    hover:bg-cust-zinc 
+    hover:border-cust-zinc;
+  }
+
+  .btn-secondary-dark {
+    @apply 
+    bg-black 
+    text-white 
+    border-white
+    hover:font-bold  
+    hover:border-5
+    ;
+  }
+
+  .btn-tertiary-dark {
+    @apply 
+    bg-cust-dark-gray  
+    text-white 
+    border-cust-dark-gray 
+    hover:bg-cust-dark-gray-lighter
+    hover:border-cust-dark-gray-lighter
+    ;
+  }
+}
+
+
 /*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,3 +99,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }*/
+
+
